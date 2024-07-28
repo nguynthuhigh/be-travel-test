@@ -4,7 +4,6 @@ const { mongoose } = require("mongoose");
 
 const router = express.Router();
 
-// router account register
 router.post("/api/users/signup", async (req, res) => {
   const { numberPhone, fullName, gender, birthday, password, status } =
     req.body;
